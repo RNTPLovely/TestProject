@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?>test123
 <TypicalsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MyTypicals" Description="Auto generated for the xCE in Modular Automation Tool" xmlns="http://abb.com/namespaces/ExtCEModel">
  
 <Typicals Name="" DataAssembly="AnaDrv" IsCause="false">
