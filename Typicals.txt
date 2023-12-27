@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<TypicalsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MyTypicals" Description="Auto generated for the xCE in Modular Automation Tool" xmlns="http://abb.com/namespaces/ExtCEModel">
+ 
+<Typicals Name="" DataAssembly="AnaDrv" IsCause="false">
+	<InputPorts Name = "StateOffOp" DataType="boolean" />
+	<InputPorts Name = "StateOpOp" DataType="boolean" />
+	<InputPorts Name = "StateAutOp" DataType="boolean" />
+	<InputPorts Name = "SrcIntOp" DataType="boolean" />
+	<InputPorts Name = "SrcManOp" DataType="boolean" />
+	<InputPorts Name = "StopOp" DataType="boolean" />
+	<InputPorts Name = "FwdOp" DataType="boolean" />
+	<InputPorts Name = "RevOp" DataType="boolean" />
+	<InputPorts Name = "RpmMan" DataType="float" />
+	<InputPorts Name = "ResetOp" DataType="boolean" />	
+        <InputPorts Name = "OSLevel" DataType="byte" />
+
+	<OutputPorts Name = "StateChannel" DataType="boolean" />
+	<OutputPorts Name = "StateOffAut" DataType="boolean" />
+	<OutputPorts Name = "StateOpAut" DataType="boolean" />
+	<OutputPorts Name = "StateAutAut" DataType="boolean" />
+	<OutputPorts Name = "StateOpAct" DataType="boolean" />
+	<OutputPorts Name = "StateAutAct" DataType="boolean" />
+	<OutputPorts Name = "StateOffAct" DataType="boolean" />
+	<OutputPorts Name = "SrcChannel" DataType="boolean" />
+	<OutputPorts Name = "SrcManAut" DataType="boolean" />
+	<OutputPorts Name = "SrcIntAut" DataType="boolean" />
+	<OutputPorts Name = "SrcIntAct" DataType="boolean" />
+	<OutputPorts Name = "SrcManAct" DataType="boolean" />
+	<OutputPorts Name = "SafePos" DataType="boolean" />
+	<OutputPorts Name = "SafePosAct" DataType="boolean" />
+	<OutputPorts Name = "FwdEn" DataType="boolean" />
+	<OutputPorts Name = "RevEn" DataType="boolean" />
+	<OutputPorts Name = "StopAut" DataType="boolean" />
+	<OutputPorts Name = "FwdAut" DataType="boolean" />
+	<OutputPorts Name = "RevAut" DataType="boolean" />
+	<OutputPorts Name = "FwdCtrl" DataType="boolean" />
+	<OutputPorts Name = "RevCtrl" DataType="boolean" />
+	<OutputPorts Name = "RpmSclMin" DataType="float" />
+	<OutputPorts Name = "RpmSclMax" DataType="float" />
+	<OutputPorts Name = "RpmUnit" DataType="int" />
+	<OutputPorts Name = "RpmMin" DataType="float" />
+	<OutputPorts Name = "RpmMax" DataType="float" />
+	<OutputPorts Name = "RpmInt" DataType="float" />
+	<OutputPorts Name = "Rpm" DataType="float" />
+	<OutputPorts Name = "RpmRbk" DataType="float" />
+	<OutputPorts Name = "RevFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "RevFbk" DataType="boolean" />
+	<OutputPorts Name = "FwdFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "FwdFbk" DataType="boolean" />
+	<OutputPorts Name = "RpmFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "RpmFbk" DataType="boolean" />
+	<OutputPorts Name = "Trip" DataType="boolean" />
+	<OutputPorts Name = "PermEn" DataType="boolean" />
+	<OutputPorts Name = "Permit" DataType="boolean" />
+	<OutputPorts Name = "IntlEn" DataType="boolean" />
+	<OutputPorts Name = "Interlock" DataType="boolean" />
+	<OutputPorts Name = "ProtEn" DataType="boolean" />
+	<OutputPorts Name = "Protect" DataType="boolean" />
+	<OutputPorts Name = "ResetAut" DataType="boolean" />
+        <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="AnaMan" IsCause="false">
+    <InputPorts Name="VMan" DataType="float" /> 
+    <InputPorts Name = "OSLevel" DataType="byte" />
+
+    <OutputPorts Name="VOut" DataType="float" />
+    <OutputPorts Name="VSclMin" DataType="float" />
+    <OutputPorts Name="VSclMax" DataType="float" />
+    <OutputPorts Name="VUnit" DataType="int" />    
+    <OutputPorts Name="VMin" DataType="float" />
+    <OutputPorts Name="VMax" DataType="float" />
+    <OutputPorts Name="VRbk" DataType="float" />
+    <OutputPorts Name="VFbk" DataType="float" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="AnaManInt" IsCause="false">
+   <InputPorts Name="VMan" DataType="float" /> 
+   <InputPorts Name="SrcIntOp" DataType="boolean" />
+   <InputPorts Name="SrcManOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />  
+
+   <OutputPorts Name="VOut" DataType="float" />
+   <OutputPorts Name="VSclMin" DataType="float" />
+   <OutputPorts Name="VSclMax" DataType="float" />
+   <OutputPorts Name="VUnit" DataType="int" /> 
+   <OutputPorts Name="VMin" DataType="float" />
+   <OutputPorts Name="VMax" DataType="float" />
+   <OutputPorts Name="VRbk" DataType="float" />
+   <OutputPorts Name="VFbk" DataType="float" />
+   <OutputPorts Name="WQC" DataType="byte" />
+   <OutputPorts Name="VInt" DataType="float" />
+   <OutputPorts Name="SrcChannel" DataType="boolean" />
+   <OutputPorts Name="SrcManAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAct" DataType="boolean" />
+   <OutputPorts Name="SrcManAct" DataType="boolean" />	
+</Typicals>
+  
+<Typicals Name="" DataAssembly="AnaMon" IsCause="false">
+	<InputPorts Name = "OSLevel" DataType="byte" />
+	<InputPorts Name = "VAHLim" DataType="float" />
+	<InputPorts Name = "VWHLim" DataType="float" />
+	<InputPorts Name = "VTHLim" DataType="float" />
+	<InputPorts Name = "VTLLim" DataType="float" />
+	<InputPorts Name = "VWLLim" DataType="float" />
+	<InputPorts Name = "VALLim" DataType="float" />
+
+	<OutputPorts Name = "V" DataType="float" />
+	<OutputPorts Name = "VSclMin" DataType="float" />
+	<OutputPorts Name = "VSclMax" DataType="float" />
+	<OutputPorts Name = "VUnit" DataType="int" />
+	<OutputPorts Name = "VAHEn" DataType="boolean" />
+	<OutputPorts Name = "VAHAct" DataType="boolean" />
+	<OutputPorts Name = "VWHEn" DataType="boolean" />
+	<OutputPorts Name = "VWHAct" DataType="boolean" />
+	<OutputPorts Name = "VTHEn" DataType="boolean" />
+	<OutputPorts Name = "VTHAct" DataType="boolean" />
+	<OutputPorts Name = "VTLEn" DataType="boolean" />
+	<OutputPorts Name = "VTLAct" DataType="boolean" />
+	<OutputPorts Name = "VWLEn" DataType="boolean" />
+	<OutputPorts Name = "VWLAct" DataType="boolean" />
+	<OutputPorts Name = "VALEn" DataType="boolean" />
+	<OutputPorts Name = "VALAct" DataType="boolean" />
+        <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+
+<Typicals Name="" DataAssembly="AnaView" IsCause="false">
+	<OutputPorts Name = "V" DataType="float" />
+	<OutputPorts Name = "VSclMin" DataType="float" />
+	<OutputPorts Name = "VSclMax" DataType="float" />
+	<OutputPorts Name = "VUnit" DataType="int" />
+</Typicals>  
+  
+<Typicals Name="" DataAssembly="AnaVlv" IsCause="false">
+	<InputPorts Name = "StateOffOp" DataType="boolean" />
+	<InputPorts Name = "StateOpOp" DataType="boolean" />
+	<InputPorts Name = "StateAutOp" DataType="boolean" />
+	<InputPorts Name = "OpenOp" DataType="boolean" />
+	<InputPorts Name = "CloseOp" DataType="boolean" />
+	<InputPorts Name = "ResetOp" DataType="boolean" />
+	<InputPorts Name = "SrcIntOp" DataType="boolean" />
+	<InputPorts Name = "SrcManOp" DataType="boolean" />
+	<InputPorts Name = "PosMan" DataType="float" />
+        <InputPorts Name = "OSLevel" DataType="byte" />
+
+	<OutputPorts Name = "StateChannel" DataType="boolean" />
+	<OutputPorts Name = "StateOffAut" DataType="boolean" />
+	<OutputPorts Name = "StateOpAut" DataType="boolean" />
+	<OutputPorts Name = "StateAutAut" DataType="boolean" />
+	<OutputPorts Name = "StateOpAct" DataType="boolean" />
+	<OutputPorts Name = "StateAutAct" DataType="boolean" />
+	<OutputPorts Name = "StateOffAct" DataType="boolean" />
+	<OutputPorts Name = "SrcChannel" DataType="boolean" />
+	<OutputPorts Name = "SrcManAut" DataType="boolean" />
+	<OutputPorts Name = "SrcIntAut" DataType="boolean" />
+	<OutputPorts Name = "SrcIntAct" DataType="boolean" />
+	<OutputPorts Name = "SrcManAct" DataType="boolean" />
+	<OutputPorts Name = "SafePos" DataType="int" />
+	<OutputPorts Name = "SafePosEn" DataType="boolean" />
+	<OutputPorts Name = "SafePosAct" DataType="boolean" />
+	<OutputPorts Name = "OpenAut" DataType="boolean" />
+	<OutputPorts Name = "CloseAut" DataType="boolean" />
+	<OutputPorts Name = "OpenAct" DataType="boolean" />
+	<OutputPorts Name = "CloseAct" DataType="boolean" />
+	<OutputPorts Name = "PosSclMin" DataType="float" />
+	<OutputPorts Name = "PosSclMax" DataType="float" />
+	<OutputPorts Name = "PosUnit" DataType="int" />
+	<OutputPorts Name = "PosMin" DataType="float" />
+	<OutputPorts Name = "PosMax" DataType="float" />
+	<OutputPorts Name = "PosInt" DataType="float" />
+	<OutputPorts Name = "PosRbk" DataType="float" />
+	<OutputPorts Name = "Pos" DataType="float" />
+	<OutputPorts Name = "OpenFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "OpenFbk" DataType="boolean" />
+	<OutputPorts Name = "CloseFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "CloseFbk" DataType="boolean" />
+	<OutputPorts Name = "PosFbkCalc" DataType="boolean" />
+	<OutputPorts Name = "PosFbk" DataType="float" />
+	<OutputPorts Name = "PermEn" DataType="boolean" />
+	<OutputPorts Name = "Permit" DataType="boolean" />
+	<OutputPorts Name = "IntlEn" DataType="boolean" />
+	<OutputPorts Name = "Interlock" DataType="boolean" />
+	<OutputPorts Name = "ProtEn" DataType="boolean" />
+	<OutputPorts Name = "Protect" DataType="boolean" />
+	<OutputPorts Name = "ResetAut" DataType="boolean" />
+        <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="BinDrv" IsCause="false">
+	<InputPorts Name="StateOffOp" DataType="boolean" />
+	<InputPorts Name="StateOpOp" DataType="boolean" />
+	<InputPorts Name="StateAutOp" DataType="boolean" />
+	<InputPorts Name="StopOp" DataType="boolean" />
+	<InputPorts Name="FwdOp" DataType="boolean" />
+	<InputPorts Name="RevOp" DataType="boolean" />
+	<InputPorts Name="ResetOp" DataType="boolean" />
+        <InputPorts Name = "OSLevel" DataType="byte" />
+
+	<OutputPorts Name="StateChannel" DataType="boolean" />
+	<OutputPorts Name="StateOffAut" DataType="boolean" />
+	<OutputPorts Name="StateOpAut" DataType="boolean" />
+	<OutputPorts Name="StateAutAut" DataType="boolean" />
+	<OutputPorts Name="StateOpAct" DataType="boolean" />
+	<OutputPorts Name="StateAutAct" DataType="boolean" />
+	<OutputPorts Name="StateOffAct" DataType="boolean" />
+	<OutputPorts Name="SafePos" DataType="boolean" />
+	<OutputPorts Name="SafePosAct" DataType="boolean" />
+	<OutputPorts Name="FwdEn" DataType="boolean" />
+	<OutputPorts Name="RevEn" DataType="boolean" />
+	<OutputPorts Name="StopAut" DataType="boolean" />
+	<OutputPorts Name="FwdAut" DataType="boolean" />
+	<OutputPorts Name="RevAut" DataType="boolean" />
+	<OutputPorts Name="FwdCtrl" DataType="boolean" />
+	<OutputPorts Name="RevCtrl" DataType="boolean" />
+	<OutputPorts Name="RevFbkCalc" DataType="boolean" />
+	<OutputPorts Name="RevFbk" DataType="boolean" />
+	<OutputPorts Name="FwdFbkCalc" DataType="boolean" />
+	<OutputPorts Name="FwdFbk" DataType="boolean" />
+	<OutputPorts Name="Trip" DataType="boolean" />
+	<OutputPorts Name="PermEn" DataType="boolean" />
+	<OutputPorts Name="Permit" DataType="boolean" />
+	<OutputPorts Name="IntlEn" DataType="boolean" />
+	<OutputPorts Name="Interlock" DataType="boolean" />
+	<OutputPorts Name="ProtEn" DataType="boolean" />
+	<OutputPorts Name="Protect" DataType="boolean" />
+	<OutputPorts Name="ResetAut" DataType="boolean" />
+        <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="BinMan" IsCause="false">
+   <InputPorts Name="VMan" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="VOut" DataType="boolean" />
+   <OutputPorts Name="VState0" DataType="string" />
+   <OutputPorts Name="VState1" DataType="string" />
+   <OutputPorts Name="VRbk" DataType="boolean" />
+   <OutputPorts Name="VFbk" DataType="boolean" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="BinManInt" IsCause="false">
+   <InputPorts Name="VMan" DataType="boolean" />
+   <InputPorts Name="SrcIntOp" DataType="boolean" />
+   <InputPorts Name="SrcManOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="VOut" DataType="boolean" />
+   <OutputPorts Name="VState0" DataType="string" />
+   <OutputPorts Name="VState1" DataType="string" />
+   <OutputPorts Name="VRbk" DataType="boolean" />
+   <OutputPorts Name="VFbk" DataType="boolean" />
+   <OutputPorts Name="WQC" DataType="byte" /> 
+   <OutputPorts Name="VInt" DataType="boolean" />
+   <OutputPorts Name="SrcChannel" DataType="boolean" />
+   <OutputPorts Name="SrcManAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAct" DataType="boolean" />
+   <OutputPorts Name="SrcManAct" DataType="boolean" />   
+</Typicals>
+
+<Typicals Name="" DataAssembly="BinMon" IsCause="false">
+   <InputPorts Name="OSLevel" DataType="byte" />
+   <InputPorts Name="VFlutTi" DataType="float" />
+   <InputPorts Name="VFlutCnt" DataType="int" />
+
+   <OutputPorts Name="VFlutEn" DataType="boolean" />
+   <OutputPorts Name="VFlutAct" DataType="boolean" />
+   <OutputPorts Name="V" DataType="boolean" />
+   <OutputPorts Name="VState0" DataType="string" />
+   <OutputPorts Name="VState1" DataType="string" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="BinView" IsCause="false">
+   <OutputPorts Name="V" DataType="boolean" />
+   <OutputPorts Name="VState0" DataType="string" />
+   <OutputPorts Name="VState1" DataType="string" /> 
+</Typicals>
+  
+<Typicals Name="" DataAssembly="BinVlv" IsCause="false">
+   <InputPorts Name="StateOffOp" DataType="boolean" />
+   <InputPorts Name="StateOpOp" DataType="boolean" />
+   <InputPorts Name="StateAutOp" DataType="boolean" />
+   <InputPorts Name="OpenOp" DataType="boolean" />
+   <InputPorts Name="CloseOp" DataType="boolean" />
+   <InputPorts Name="ResetOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="StateChannel" DataType="boolean" />
+   <OutputPorts Name="StateOffAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAut" DataType="boolean" />
+   <OutputPorts Name="StateAutAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAct" DataType="boolean" />
+   <OutputPorts Name="StateAutAct" DataType="boolean" />
+   <OutputPorts Name="StateOffAct" DataType="boolean" />
+   <OutputPorts Name="SafePos" DataType="boolean" />
+   <OutputPorts Name="SafePosEn" DataType="boolean" />
+   <OutputPorts Name="SafePosAct" DataType="boolean" />	
+   <OutputPorts Name="OpenAut" DataType="boolean" />
+   <OutputPorts Name="CloseAut" DataType="boolean" />
+   <OutputPorts Name="Ctrl" DataType="boolean" />
+   <OutputPorts Name="OpenFbkCalc" DataType="boolean" />
+   <OutputPorts Name="OpenFbk" DataType="boolean" />
+   <OutputPorts Name="CloseFbkCalc" DataType="boolean" />
+   <OutputPorts Name="CloseFbk" DataType="boolean" />
+   <OutputPorts Name="PermEn" DataType="boolean" />
+   <OutputPorts Name="Permit" DataType="boolean" />
+   <OutputPorts Name="IntlEn" DataType="boolean" />
+   <OutputPorts Name="Interlock" DataType="boolean" />
+   <OutputPorts Name="ProtEn" DataType="boolean" />
+   <OutputPorts Name="Protect" DataType="boolean" />
+   <OutputPorts Name="ResetAut" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="DIntMan" IsCause="false">
+   <InputPorts Name="VMan" DataType="int" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="VOut" DataType="int" />
+   <OutputPorts Name="VSclMin" DataType="int" />
+   <OutputPorts Name="VSclMax" DataType="int" />
+   <OutputPorts Name="VUnit" DataType="int" />
+   <OutputPorts Name="VMin" DataType="int" />
+   <OutputPorts Name="VMax" DataType="int" />
+   <OutputPorts Name="VRbk" DataType="int" />
+   <OutputPorts Name="VFbk" DataType="int" /> 
+</Typicals>
+
+<Typicals Name="" DataAssembly="DIntManInt" IsCause="false">
+   <InputPorts Name="VMan" DataType="int" />
+   <InputPorts Name="SrcIntOp" DataType="boolean" />
+   <InputPorts Name="SrcManOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+  
+   <OutputPorts Name="VOut" DataType="int" />
+   <OutputPorts Name="VSclMin" DataType="int" />
+   <OutputPorts Name="VSclMax" DataType="int" />
+   <OutputPorts Name="VUnit" DataType="int" />
+   <OutputPorts Name="VMin" DataType="int" />
+   <OutputPorts Name="VMax" DataType="int" />
+   <OutputPorts Name="VRbk" DataType="int" />
+   <OutputPorts Name="VFbk" DataType="int" />
+   <OutputPorts Name="WQC" DataType="byte" />
+   <OutputPorts Name="VInt" DataType="int" />
+   <OutputPorts Name="SrcChannel" DataType="boolean" />
+   <OutputPorts Name="SrcManAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAct" DataType="boolean" />
+   <OutputPorts Name="SrcManAct" DataType="boolean" />	
+ </Typicals>
+  
+<Typicals Name="" DataAssembly="DIntMon" IsCause="false">
+   <InputPorts Name="OSLevel" DataType="byte" />
+   <InputPorts Name="VAHLim" DataType="int" />
+   <InputPorts Name="VWHLim" DataType="int" />
+   <InputPorts Name="VTHLim" DataType="int" />
+   <InputPorts Name="VTLLim" DataType="int" />
+   <InputPorts Name="VWLLim" DataType="int" />
+   <InputPorts Name="VALLim" DataType="int" />
+	
+   <OutputPorts Name="V" DataType="int" />
+   <OutputPorts Name="VSclMin" DataType="int" />
+   <OutputPorts Name="VSclMax" DataType="int" />
+   <OutputPorts Name="VUnit" DataType="int" />
+   <OutputPorts Name="VAHEn" DataType="boolean" />
+   <OutputPorts Name="VAHAct" DataType="boolean" />
+   <OutputPorts Name="VWHEn" DataType="boolean" />
+   <OutputPorts Name="VWHAct" DataType="boolean" />
+   <OutputPorts Name="VTHEn" DataType="boolean" />
+   <OutputPorts Name="VTHAct" DataType="boolean" />
+   <OutputPorts Name="VTLEn" DataType="boolean" />
+   <OutputPorts Name="VTLAct" DataType="boolean" />
+   <OutputPorts Name="VWLEn" DataType="boolean" />
+   <OutputPorts Name="VWLAct" DataType="boolean" />
+   <OutputPorts Name="VALEn" DataType="boolean" />
+   <OutputPorts Name="VALAct" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="DIntView" IsCause="false">
+   <OutputPorts Name="V" DataType="int" />
+   <OutputPorts Name="VSclMin" DataType="int" />
+   <OutputPorts Name="VSclMax" DataType="int" />
+   <OutputPorts Name="VUnit" DataType="int" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="LockView16" IsCause="false">
+   <OutputPorts Name="In9En" DataType="boolean" />
+   <OutputPorts Name="In9" DataType="boolean" />
+   <OutputPorts Name="In9Inv" DataType="boolean" />
+   <OutputPorts Name="In10En" DataType="boolean" />
+   <OutputPorts Name="In10" DataType="boolean" />
+   <OutputPorts Name="In10Inv" DataType="boolean" />
+   <OutputPorts Name="In11En" DataType="boolean" />
+   <OutputPorts Name="In11" DataType="boolean" />
+   <OutputPorts Name="In11Inv" DataType="boolean" />
+	<OutputPorts Name="In12En" DataType="boolean" />
+	<OutputPorts Name="In12" DataType="boolean" />
+	<OutputPorts Name="In12Inv" DataType="boolean" />
+	<OutputPorts Name="In13En" DataType="boolean" />
+	<OutputPorts Name="In13" DataType="boolean" />
+	<OutputPorts Name="In13Inv" DataType="boolean" />
+	<OutputPorts Name="In14En" DataType="boolean" />
+	<OutputPorts Name="In14" DataType="boolean" />
+	<OutputPorts Name="In14Inv" DataType="boolean" />
+	<OutputPorts Name="In15En" DataType="boolean" />
+	<OutputPorts Name="In15" DataType="boolean" />
+	<OutputPorts Name="In15Inv" DataType="boolean" />
+	<OutputPorts Name="In16En" DataType="boolean" />
+	<OutputPorts Name="In16" DataType="boolean" />
+	<OutputPorts Name="In16Inv" DataType="boolean" />	
+	<OutputPorts Name="In9QC" DataType="byte" />
+	<OutputPorts Name="In10QC" DataType="byte" />
+	<OutputPorts Name="In11QC" DataType="byte" />
+	<OutputPorts Name="In12QC" DataType="byte" />
+	<OutputPorts Name="In13QC" DataType="byte" />
+	<OutputPorts Name="In14QC" DataType="byte" />
+	<OutputPorts Name="In15QC" DataType="byte" />
+	<OutputPorts Name="In16QC" DataType="byte" />	
+	<OutputPorts Name="In9Txt" DataType="string" />
+	<OutputPorts Name="In10Txt" DataType="string" />
+	<OutputPorts Name="In11Txt" DataType="string" />
+	<OutputPorts Name="In12Txt" DataType="string" />
+	<OutputPorts Name="In13Txt" DataType="string" />
+	<OutputPorts Name="In14Txt" DataType="string" />
+	<OutputPorts Name="In15Txt" DataType="string" />
+	<OutputPorts Name="In16Txt" DataType="string" />	
+ </Typicals>
+  
+  <Typicals Name="" DataAssembly="LockView4" IsCause="false">
+    <OutputPorts Name="Logic" DataType="boolean" />
+	<OutputPorts Name="In1En" DataType="boolean" />
+	<OutputPorts Name="In1" DataType="boolean" />
+	<OutputPorts Name="In1Inv" DataType="boolean" />
+	<OutputPorts Name="In2En" DataType="boolean" />
+	<OutputPorts Name="In2" DataType="boolean" />
+	<OutputPorts Name="In2Inv" DataType="boolean" />
+	<OutputPorts Name="In3En" DataType="boolean" />
+	<OutputPorts Name="In3" DataType="boolean" />
+	<OutputPorts Name="In3Inv" DataType="boolean" />
+	<OutputPorts Name="In4En" DataType="boolean" />
+	<OutputPorts Name="In4" DataType="boolean" />
+	<OutputPorts Name="In4Inv" DataType="boolean" />
+	<OutputPorts Name="Out" DataType="boolean" />
+	<OutputPorts Name="OutQC" DataType="boolean" />	
+	<OutputPorts Name="In1QC" DataType="byte" />
+	<OutputPorts Name="In2QC" DataType="byte" />
+	<OutputPorts Name="In3QC" DataType="byte" />
+	<OutputPorts Name="In4QC" DataType="byte" />	
+	<OutputPorts Name="In1Txt" DataType="string" />
+	<OutputPorts Name="In2Txt" DataType="string" />
+	<OutputPorts Name="In3Txt" DataType="string" />
+	<OutputPorts Name="In4Txt" DataType="string" />	
+  </Typicals>
+  
+  <Typicals Name="" DataAssembly="LockView8" IsCause="false">
+    <OutputPorts Name="In5En" DataType="boolean" />
+	<OutputPorts Name="In5" DataType="boolean" />
+	<OutputPorts Name="In5Inv" DataType="boolean" />
+	<OutputPorts Name="In6En" DataType="boolean" />
+	<OutputPorts Name="In6" DataType="boolean" />
+	<OutputPorts Name="In6Inv" DataType="boolean" />
+	<OutputPorts Name="In7En" DataType="boolean" />
+	<OutputPorts Name="In7" DataType="boolean" />
+	<OutputPorts Name="In7Inv" DataType="boolean" />
+	<OutputPorts Name="In8En" DataType="boolean" />
+	<OutputPorts Name="In8" DataType="boolean" />
+	<OutputPorts Name="In8Inv" DataType="boolean" />
+	<OutputPorts Name="In5QC" DataType="byte" />
+	<OutputPorts Name="In6QC" DataType="byte" />
+	<OutputPorts Name="In7QC" DataType="byte" />
+	<OutputPorts Name="In8QC" DataType="byte" />	
+	<OutputPorts Name="In5Txt" DataType="string" />
+	<OutputPorts Name="In6Txt" DataType="string" />
+	<OutputPorts Name="In7Txt" DataType="string" />
+	<OutputPorts Name="In8Txt" DataType="string" />	
+  </Typicals>
+  
+<Typicals Name="" DataAssembly="MonAnaDrv" IsCause="false">
+   <InputPorts Name="MonEn" DataType="boolean" />
+   <InputPorts Name="RpmAHLim" DataType="float" />
+   <InputPorts Name="RpmALLim" DataType="float" />
+   <InputPorts Name="StateOffOp" DataType="boolean" />
+   <InputPorts Name="StateOpOp" DataType="boolean" />
+   <InputPorts Name="StateAutOp" DataType="boolean" />
+   <InputPorts Name="SrcIntOp" DataType="boolean" />
+   <InputPorts Name="SrcManOp" DataType="boolean" />
+   <InputPorts Name="StopOp" DataType="boolean" />
+   <InputPorts Name="FwdOp" DataType="boolean" />
+   <InputPorts Name="RevOp" DataType="boolean" />
+   <InputPorts Name="RpmMan" DataType="float" />
+   <InputPorts Name="ResetOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+        
+   <OutputPorts Name="MonSafePos" DataType="boolean" />
+   <OutputPorts Name="MonStatErr" DataType="boolean" />
+   <OutputPorts Name="MonDynErr" DataType="boolean" />
+   <OutputPorts Name="MonStatTi" DataType="float" />
+   <OutputPorts Name="MonDynTi" DataType="float" />
+   <OutputPorts Name="RpmErr" DataType="float" />
+   <OutputPorts Name="RpmAHEn" DataType="boolean" />
+   <OutputPorts Name="RpmALEn" DataType="boolean" />
+   <OutputPorts Name="RpmAHAct" DataType="boolean" />
+   <OutputPorts Name="RpmALAct" DataType="boolean" />
+   <OutputPorts Name="StateChannel" DataType="boolean" />
+   <OutputPorts Name="StateOffAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAut" DataType="boolean" />
+   <OutputPorts Name="StateAutAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAct" DataType="boolean" />
+   <OutputPorts Name="StateAutAct" DataType="boolean" />
+   <OutputPorts Name="StateOffAct" DataType="boolean" />
+   <OutputPorts Name="SrcChannel" DataType="boolean" />
+   <OutputPorts Name="SrcManAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAct" DataType="boolean" />
+   <OutputPorts Name="SrcManAct" DataType="boolean" />
+   <OutputPorts Name="SafePos" DataType="boolean" />
+   <OutputPorts Name="SafePosAct" DataType="boolean" />
+   <OutputPorts Name="FwdEn" DataType="boolean" />
+   <OutputPorts Name="RevEn" DataType="boolean" />	
+   <OutputPorts Name="StopAut" DataType="boolean" />
+   <OutputPorts Name="FwdAut" DataType="boolean" />
+   <OutputPorts Name="RevAut" DataType="boolean" />
+   <OutputPorts Name="FwdCtrl" DataType="boolean" />
+   <OutputPorts Name="RevCtrl" DataType="boolean" />
+   <OutputPorts Name="RpmSclMin" DataType="float" />
+   <OutputPorts Name="RpmSclMax" DataType="float" />
+   <OutputPorts Name="RpmUnit" DataType="int" />
+   <OutputPorts Name="RpmMin" DataType="float" />
+   <OutputPorts Name="RpmMax" DataType="float" />
+   <OutputPorts Name="RpmInt" DataType="float" />
+   <OutputPorts Name="Rpm" DataType="float" />	
+   <OutputPorts Name="RpmRbk" DataType="float" />   
+   <OutputPorts Name="RevFbkCalc" DataType="boolean" />
+   <OutputPorts Name="RevFbk" DataType="boolean" />
+   <OutputPorts Name="FwdFbkCalc" DataType="boolean" />
+   <OutputPorts Name="FwdFbk" DataType="boolean" />
+   <OutputPorts Name="RpmFbkCalc" DataType="boolean" />
+   <OutputPorts Name="RpmFbk" DataType="float" />
+   <OutputPorts Name="Trip" DataType="boolean" />
+   <OutputPorts Name="PermEn" DataType="boolean" />
+   <OutputPorts Name="Permit" DataType="boolean" />
+   <OutputPorts Name="IntlEn" DataType="boolean" />
+   <OutputPorts Name="Interlock" DataType="boolean" />
+   <OutputPorts Name="ProtEn" DataType="boolean" />
+   <OutputPorts Name="Protect" DataType="boolean" />
+   <OutputPorts Name="ResetAut" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="MonAnaVlv" IsCause="false">
+    <InputPorts Name="MonEn" DataType="boolean" />
+    <InputPorts Name="StateOffOp" DataType="boolean" />
+    <InputPorts Name="StateOpOp" DataType="boolean" />
+    <InputPorts Name="StateAutOp" DataType="boolean" />
+    <InputPorts Name="SrcIntOp" DataType="boolean" />
+    <InputPorts Name="SrcManOp" DataType="boolean" />
+    <InputPorts Name="OpenOp" DataType="boolean" />
+    <InputPorts Name="CloseOp" DataType="boolean" />
+    <InputPorts Name="PosMan" DataType="float" />
+    <InputPorts Name="ResetOp" DataType="boolean" />
+    <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="MonSafePos" DataType="boolean" />
+   <OutputPorts Name="MonStatErr" DataType="boolean" />
+   <OutputPorts Name="MonDynErr" DataType="boolean" />
+   <OutputPorts Name="MonStatTi" DataType="float" />
+   <OutputPorts Name="MonDynTi" DataType="float" />
+   <OutputPorts Name="PosReachedFbk" DataType="boolean" />
+   <OutputPorts Name="PosTolerance" DataType="float" />
+   <OutputPorts Name="MonPosTi" DataType="float" />
+   <OutputPorts Name="MonPosErr" DataType="boolean" />
+   <OutputPorts Name="StateChannel" DataType="boolean" />
+   <OutputPorts Name="StateOffAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAut" DataType="boolean" />
+   <OutputPorts Name="StateAutAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAct" DataType="boolean" />
+   <OutputPorts Name="StateAutAct" DataType="boolean" />
+   <OutputPorts Name="StateOffAct" DataType="boolean" />
+   <OutputPorts Name="SrcChannel" DataType="boolean" />
+   <OutputPorts Name="SrcManAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAut" DataType="boolean" />
+   <OutputPorts Name="SrcIntAct" DataType="boolean" />
+   <OutputPorts Name="SrcManAct" DataType="boolean" />
+   <OutputPorts Name="SafePos" DataType="boolean" />
+   <OutputPorts Name="SafePosEn" DataType="boolean" />
+   <OutputPorts Name="SafePosAct" DataType="boolean" />
+   <OutputPorts Name="OpenAut" DataType="boolean" />
+   <OutputPorts Name="CloseAut" DataType="boolean" />
+   <OutputPorts Name="OpenAct" DataType="boolean" />
+   <OutputPorts Name="CloseAct" DataType="boolean" />
+   <OutputPorts Name="PosSclMin" DataType="float" />
+   <OutputPorts Name="PosSclMax" DataType="float" />
+   <OutputPorts Name="PosUnit" DataType="int" />
+   <OutputPorts Name="PosMin" DataType="float" />
+   <OutputPorts Name="PosMax" DataType="float" />
+   <OutputPorts Name="PosInt" DataType="float" />
+   <OutputPorts Name="PosRbk" DataType="float" />
+   <OutputPorts Name="Pos" DataType="float" />
+   <OutputPorts Name="OpenFbkCalc" DataType="boolean" />	
+   <OutputPorts Name="OpenFbk" DataType="boolean" /> 
+   <OutputPorts Name="CloseFbkCalc" DataType="boolean" />
+   <OutputPorts Name="CloseFbk" DataType="boolean" />
+   <OutputPorts Name="PosFbkCalc" DataType="boolean" />
+   <OutputPorts Name="PosFbk" DataType="float" />
+   <OutputPorts Name="PermEn" DataType="boolean" />
+   <OutputPorts Name="Permit" DataType="boolean" />
+   <OutputPorts Name="IntlEn" DataType="boolean" />
+   <OutputPorts Name="Interlock" DataType="boolean" />
+   <OutputPorts Name="ProtEn" DataType="boolean" />
+   <OutputPorts Name="Protect" DataType="boolean" />
+   <OutputPorts Name="ResetAut" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+  
+<Typicals Name="" DataAssembly="MonBinDrv" IsCause="false">
+   <InputPorts Name="MonEn" DataType="boolean" />
+   <InputPorts Name="StateOffOp" DataType="boolean" />
+   <InputPorts Name="StateOpOp" DataType="boolean" />
+   <InputPorts Name="StateAutOp" DataType="boolean" />
+   <InputPorts Name="StopOp" DataType="boolean" />
+   <InputPorts Name="FwdOp" DataType="boolean" />
+   <InputPorts Name="RevOp" DataType="boolean" />
+   <InputPorts Name="ResetOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="MonSafePos" DataType="boolean" />
+   <OutputPorts Name="MonStatErr" DataType="boolean" />
+   <OutputPorts Name="MonDynErr" DataType="boolean" />
+   <OutputPorts Name="MonStatTi" DataType="float" />
+   <OutputPorts Name="MonDynTi" DataType="float" />
+   <OutputPorts Name="StateChannel" DataType="boolean" />
+   <OutputPorts Name="StateOffAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAut" DataType="boolean" />
+   <OutputPorts Name="StateAutAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAct" DataType="boolean" />
+   <OutputPorts Name="StateAutAct" DataType="boolean" />
+   <OutputPorts Name="StateOffAct" DataType="boolean" />
+   <OutputPorts Name="SafePos" DataType="boolean" />
+   <OutputPorts Name="SafePosAct" DataType="boolean" />
+   <OutputPorts Name="FwdEn" DataType="boolean" />
+   <OutputPorts Name="RevEn" DataType="boolean" />	
+   <OutputPorts Name="StopAut" DataType="boolean" />
+   <OutputPorts Name="FwdAut" DataType="boolean" />
+   <OutputPorts Name="RevAut" DataType="boolean" />
+   <OutputPorts Name="FwdCtrl" DataType="boolean" />
+   <OutputPorts Name="RevCtrl" DataType="boolean" />
+   <OutputPorts Name="RevFbkCalc" DataType="boolean" />
+   <OutputPorts Name="RevFbk" DataType="boolean" />
+   <OutputPorts Name="FwdFbkCalc" DataType="boolean" />
+   <OutputPorts Name="FwdFbk" DataType="boolean" />
+   <OutputPorts Name="Trip" DataType="boolean" />
+   <OutputPorts Name="PermEn" DataType="boolean" />
+   <OutputPorts Name="Permit" DataType="boolean" />
+   <OutputPorts Name="IntlEn" DataType="boolean" />
+   <OutputPorts Name="Interlock" DataType="boolean" />
+   <OutputPorts Name="ProtEn" DataType="boolean" />
+   <OutputPorts Name="Protect" DataType="boolean" />
+   <OutputPorts Name="ResetAut" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="MonBinVlv" IsCause="false">
+   <InputPorts Name="MonEn" DataType="boolean" />
+   <InputPorts Name="StateOffOp" DataType="boolean" />
+   <InputPorts Name="StateOpOp" DataType="boolean" />
+   <InputPorts Name="StateAutOp" DataType="boolean" />
+   <InputPorts Name="OpenOp" DataType="boolean" />
+   <InputPorts Name="CloseOp" DataType="boolean" />
+   <InputPorts Name="ResetOp" DataType="boolean" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name="MonSafePos" DataType="boolean" />
+   <OutputPorts Name="MonStatErr" DataType="boolean" />
+   <OutputPorts Name="MonDynErr" DataType="boolean" />
+   <OutputPorts Name="MonStatTi" DataType="float" />
+   <OutputPorts Name="MonDynTi" DataType="float" />
+   <OutputPorts Name="StateChannel" DataType="boolean" />
+   <OutputPorts Name="StateOffAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAut" DataType="boolean" />
+   <OutputPorts Name="StateAutAut" DataType="boolean" />
+   <OutputPorts Name="StateOpAct" DataType="boolean" />
+   <OutputPorts Name="StateAutAct" DataType="boolean" />
+   <OutputPorts Name="StateOffAct" DataType="boolean" />
+   <OutputPorts Name="SafePos" DataType="boolean" />
+   <OutputPorts Name="SafePosEn" DataType="boolean" />
+   <OutputPorts Name="SafePosAct" DataType="boolean" />	
+   <OutputPorts Name="OpenAut" DataType="boolean" />
+   <OutputPorts Name="CloseAut" DataType="boolean" />
+   <OutputPorts Name="Ctrl" DataType="boolean" />
+   <OutputPorts Name="OpenFbkCalc" DataType="boolean" />
+   <OutputPorts Name="OpenFbk" DataType="boolean" />
+   <OutputPorts Name="CloseFbkCalc" DataType="boolean" />
+   <OutputPorts Name="CloseFbk" DataType="boolean" />
+   <OutputPorts Name="PermEn" DataType="boolean" />
+   <OutputPorts Name="Permit" DataType="boolean" />
+   <OutputPorts Name="IntlEn" DataType="boolean" />
+   <OutputPorts Name="Interlock" DataType="boolean" />
+   <OutputPorts Name="ProtEn" DataType="boolean" />
+   <OutputPorts Name="Protect" DataType="boolean" />
+   <OutputPorts Name="ResetAut" DataType="boolean" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+  
+<Typicals Name="" DataAssembly="PIDCtrl" IsCause="false">
+<InputPorts Name = "StateOffOp" DataType="boolean" />
+   <InputPorts Name = "StateOpOp" DataType="boolean" />
+   <InputPorts Name = "StateAutOp" DataType="boolean" />
+   <InputPorts Name = "SrcIntOp" DataType="boolean" />
+   <InputPorts Name = "SrcManOp" DataType="boolean" />
+   <InputPorts Name = "SPMan" DataType="float" />
+   <InputPorts Name = "MVMan" DataType="float" />
+   <InputPorts Name = "P" DataType="float" />
+   <InputPorts Name = "Ti" DataType="float" />
+   <InputPorts Name = "Td" DataType="float" />
+   <InputPorts Name = "OSLevel" DataType="byte" />
+
+   <OutputPorts Name = "StateChannel" DataType="boolean" />
+   <OutputPorts Name = "StateOffAut" DataType="boolean" />
+   <OutputPorts Name = "StateOpAut" DataType="boolean" />
+   <OutputPorts Name = "StateAutAut" DataType="boolean" />
+   <OutputPorts Name = "StateOpAct" DataType="boolean" />
+   <OutputPorts Name = "StateAutAct" DataType="boolean" />
+   <OutputPorts Name = "StateOffAct" DataType="boolean" />
+   <OutputPorts Name = "SrcChannel" DataType="boolean" />
+   <OutputPorts Name = "SrcManAut" DataType="boolean" />
+   <OutputPorts Name = "SrcIntAut" DataType="boolean" />
+   <OutputPorts Name = "SrcIntAct" DataType="boolean" />
+   <OutputPorts Name = "SrcManAct" DataType="boolean" />
+   <OutputPorts Name = "PV" DataType="float" />
+   <OutputPorts Name = "PVSclMin" DataType="float" />
+   <OutputPorts Name = "PVSclMax" DataType="float" />
+   <OutputPorts Name = "PVUnit" DataType="int" />   
+   <OutputPorts Name = "SPInt" DataType="float" />
+   <OutputPorts Name = "SPSclMin" DataType="float" />
+   <OutputPorts Name = "SPSclMax" DataType="float" />
+   <OutputPorts Name = "SPUnit" DataType="int" />
+   <OutputPorts Name = "SPIntMin" DataType="float" />
+   <OutputPorts Name = "SPIntMax" DataType="float" />
+   <OutputPorts Name = "SPManMin" DataType="float" />
+   <OutputPorts Name = "SPManMax" DataType="float" />
+   <OutputPorts Name = "SP" DataType="float" />
+   <OutputPorts Name = "MV" DataType="float" />
+   <OutputPorts Name = "MVMin" DataType="float" />
+   <OutputPorts Name = "MVMax" DataType="float" />
+   <OutputPorts Name = "MVUnit" DataType="int" />
+   <OutputPorts Name = "MVSclMin" DataType="float" />
+   <OutputPorts Name = "MVSclMax" DataType="float" />
+   <OutputPorts Name = "WQC" DataType="byte" />
+</Typicals>
+
+  <Typicals Name="Action" DataAssembly="none" Description="Action" IsCause="true">
+		<InputPorts Name="X" Description="Connection" DataType="boolean" Category="Control" NameForCodeGeneration="X"/>
+		<OutputPorts Name="Enter" Description="Action triggered when entering the state" DataType="boolean" Category="Control" NameForCodeGeneration="Enter"/>
+		<OutputPorts Name="Active" Description="Action triggered when the state is active" DataType="boolean" Category="Control" NameForCodeGeneration="Active"/>
+		<OutputPorts Name="Leave" Description="Action triggered when leaving the state" DataType="boolean" Category="Control" NameForCodeGeneration="Leave"/>
+	</Typicals>
+	<Typicals Name="State" DataAssembly="none" Description="State" IsCause="false">
+		<InputPorts Name="X" Description="Connection to sequential functional chart" DataType="boolean" Category="Control" NameForCodeGeneration="X"/>		
+	</Typicals>
+	<Typicals Name="Variable" DataAssembly="none" Description="Global variable" IsCause="false">
+		<InputPorts Name="X" Description="Connection to variable" DataType="real"/>
+		<OutputPorts Name="boolean" Description="variable of type bool" DataType="boolean"/>
+		<OutputPorts Name="real" Description="variable of type real" DataType="real"/>
+		<OutputPorts Name="integer" Description="variable of type integer" DataType="integer"/>
+	</Typicals>	
+	<Typicals Name="Value" DataAssembly="none" Description="Value or constant" IsCause="false">
+		<OutputPorts Name="boolean" Description="value of type bool" DataType="boolean"/>
+		<OutputPorts Name="real" Description="value of type real" DataType="real"/>
+		<OutputPorts Name="integer" Description="value of type integer" DataType="integer"/>
+	</Typicals>
+</TypicalsCollection>
